@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Pattaya&display=swap');
+
+@import "partitions/body";
+@import "partitions/header";
+@import "partitions/texto-inicio";
+@import "partitions/variables";
+@media  screen and (min-width:720px) {
+    @import "partitions/login";
+@import "partitions/main";
+@import "partitions/carrusel";
+@import "partitions/footer";
+
+}
+@media  screen and (max-width:720px) {
+    @import "partitions/mainmob";
+    @import "partitions/carrusel";
+    @import "partitions/texto-inicio-mobile";
+    @import "partitions/footer-mob";
+}
+

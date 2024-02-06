@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import "./variables";
+@keyframes load {
+    0% {
+   }
+20%{
+       transform:rotateY(360deg);
+   }
+    50% {
+        transform: rotateZ(30deg);
+   }
+    90%{
+        transform: rotateZ(-30deg);
+
+    }
+    100% {
+        margin-top: -2%;
+        margin-bottom: 2%;
+   }
+}
+
+
+.texto-opciones{
+    border-radius: 1rem;
+    font-family: 'Koulen';
+    grid-area: txt;
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .ping{
+        
+        img{
+
+            width: 10%;
+            padding-bottom: 1%;
+            animation: load 1.5s ease-out infinite;
+
+        }
+    }
+        .texto-opciones-1{
+
+        border-radius: 1rem;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: flex-start;
+        
+        h1{
+            font-size: 4rem;
+            color:map-get($colores, color2) ;
+            margin-left: 5%;
+            padding: 2%;
+            -webkit-text-stroke: 3px black;
+            }
+            h3{
+                font-size: 3rem;
+
+                align-self: center;
+                        }
+            img{
+                width:21%;
+                align-self: flex-end;
+                padding-bottom: 10%;
+                position:absolute;
+            }
+            .txt-op-2{
+                @include flex-centrar;
+                @include row-no;
+                
+            }
+    }
+    
+}       
+
+.texto-opciones-2{
+    grid-area: txt-2;
+    margin-top: 15%;
+    border-bottom: none;
+    border-radius: 1rem;
+    @include flex-centrar;
+    @include col-no;
+    margin-bottom: 2%;
+    font-family: 'Koulen';
+        h2{
+            @include flex-centrar;
+            margin-right: 10%;       
+            padding: 1%;
+        }
+        p{
+            @include flex-centrar;
+            @include col-no;
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+        }
+}

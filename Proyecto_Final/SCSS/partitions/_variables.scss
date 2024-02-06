@@ -1,0 +1,24 @@
+$colores:(
+    color1:#FFC300,
+    color2:#ffa322,
+    color3:#249900,
+    color4: #a81afa,
+
+);
+
+@mixin flex-centrar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+};
+@mixin flex-space-evenly{
+   
+};
+
+@mixin row-no {
+    flex-flow: row nowrap;
+};
+@mixin col-no {
+    flex-flow: column nowrap;
+};
